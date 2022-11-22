@@ -283,7 +283,7 @@ public class InternalFrameSolicitudes extends javax.swing.JInternalFrame {
             int res = ps.executeUpdate();
 
             if (res > 0) {
-                JOptionPane.showMessageDialog(null, "Registro Guardaddo");
+                JOptionPane.showMessageDialog(null, "Registro Guardado");
                 limpiarCajas();
             } else {
                 JOptionPane.showMessageDialog(null, "Error al Guardar");
