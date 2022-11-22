@@ -220,7 +220,7 @@ public class InternalFrameGestionMaquinas extends javax.swing.JInternalFrame {
 
         try {
             con = getConexion();
-            ps = con.prepareStatement("INSERT INTO maquinas (codigo,nombre,color) VALUES(?,?,?)");
+            ps = con.prepareStatement("INSERT INTO maquinas (codigo,nombre,marca) VALUES(?,?,?)");
             ps.setString(1, txtCodigo.getText());
             ps.setString(2, txtNombre.getText());
             ps.setString(3, txtMarca.getText());
@@ -249,7 +249,7 @@ public class InternalFrameGestionMaquinas extends javax.swing.JInternalFrame {
 
         try {
             con = getConexion();
-            ps = con.prepareStatement("UPDATE maquinas  SET codigo=?,nombre=?,color=? WHERE id=?");
+            ps = con.prepareStatement("UPDATE maquinas  SET codigo=?,nombre=?,marca=? WHERE id=?");
             ps.setString(1, txtCodigo.getText());
             ps.setString(2, txtNombre.getText());
             ps.setString(3, txtMarca.getText());
