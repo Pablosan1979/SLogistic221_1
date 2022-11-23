@@ -387,6 +387,7 @@ public class frmMaquina extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        tablaMaquinas.setAutoCreateRowSorter(true);
         tablaMaquinas.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         tablaMaquinas.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         tablaMaquinas.setModel(new javax.swing.table.DefaultTableModel(
